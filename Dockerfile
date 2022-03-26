@@ -7,7 +7,7 @@ COPY . ${GOPATH}/src/github.com/mcuadros/ofelia
 
 RUN go build -o /go/bin/ofelia .
 
-FROM alpine:3.14
+FROM alpine:latest
 
 # this label is required to identify container with ofelia running
 LABEL ofelia.service=true
